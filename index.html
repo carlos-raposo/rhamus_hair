@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Material Design for Bootstrap</title>
+    <title>Rhamus Hair</title>
     <!-- MDB icon -->
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/cut-solid.ico" type="image/x-icon" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
     <!-- Google Fonts Roboto -->
@@ -21,10 +21,14 @@
     <style>
 		
 		h1 {text-align:center; padding-bottom:0.5em}
-		.px-6 {
-			  padding-left: 6rem;
-			  padding-right: 6rem;
+		.lead {
+			font-size: 1rem;
 			}
+		.figure-caption {
+			font-size: .875em;
+			text-align:center;
+			}	
+
 		.mt-0 {
 			  margin-top: 0 !important;
 			}
@@ -33,13 +37,123 @@
 			}
 		i {font-size:2rem}
 		#insta {
-background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
--webkit-background-clip: text;
-/* Also define standard property for compatibility */
-background-clip: text;
--webkit-text-fill-color: transparent;
+		background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+		-webkit-background-clip: text;
+		/* Also define standard property for compatibility */
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-size: 2rem; /* change this to change the size*/}
+		
+		/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* ----------------------MEDIA QUERIES----------------------------
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
 
-font-size: 2rem; /* change this to change the size*/
+/* --------------------------------------------------------- */
+/* ---------Smartphones (portrait and landscape) ----------- */
+/* --------------------------------------------------------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px){}
+
+/* ------------------------------------------------ */
+/* -------------Smartphones (landscape) ----------- */
+/* ------------------------------------------------ */
+@media only screen
+and (min-width : 321px) {
+}
+
+
+/* ---------------------------------- */
+/* Smartphones (portrait) ----------- */
+/* ---------------------------------- */
+
+@media only screen
+and (max-width : 320px){
+}
+
+/* ------------------------------------------------- */
+/* ------------- Samsung Galaxy S5 ----landscape---- */
+/* ------------------------------------------------- */
+@media only screen and (min-device-width: 360px) 
+and (max-device-height: 640px) and (orientation : landscape) 
+and (-webkit-device-pixel-ratio: 3)	{
+}
+
+/* --------------------------------------------------- */
+/* -------------- Samsung Galaxy S5 -----portrait--- - */
+/* --------------------------------------------------- */
+@media only screen and (min-device-width: 360px) 
+and (max-device-height: 640px) and (orientation : portrait) 
+and (-webkit-device-pixel-ratio: 3){
+}	
+
+/* ---------------------------------------------- */ 
+/* ------ iPads (portrait and landscape) -------- */
+/* ---------------------------------------------- */
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px){
+}
+
+/* ------------------------------------------- */ 
+/* ------------iPads (landscape) ------------- */
+/* ------------------------------------------- */
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape){		
+
+}
+
+/* ------------------------------------------- */ 
+/* ----------- iPads (portrait) -------------- */
+/* ------------------------------------------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait){
+}
+
+/* ------------------------------------------- */ 
+/* ---------- Desktops and laptops ----------- */
+/* ------------------------------------------- */
+@media only screen
+and (min-width : 1224px){
+		.lead {
+			font-size: 1.4rem;
+			}
+		.figure-caption {
+			font-size: 1.4em;			
+			}
+			.px-4 {
+			padding-top: 2.2rem;
+			padding-bottom: 2.2rem;
+			}
+		.px-6 {
+			 padding-left: 6rem;
+			 padding-right: 6rem;
+			}
+}
+
+
+/* ------------------------------------------- */
+/* -------------Large screens ---------------- */
+/* ------------------------------------------- */
+@media only screen
+and (min-width : 1824px){
+		.lead {
+			font-size: 1.4rem;
+			}
+		.figure-caption {
+			font-size: 1.4em;
+			}
+}
+
+
 		
 	</style>
   </head>
@@ -64,9 +178,9 @@ font-size: 2rem; /* change this to change the size*/
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			  <div class="navbar-nav ml-auto">
 				<a class="nav-link active" aria-current="page" href="#">Início</a>
-				<a class="nav-link" href="#">Serviços</a>
+				<a class="nav-link" href="#servicos">Serviços</a>
 				<a class="nav-link" href="#">Preços</a>
-				<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
+				<a class="nav-link" href="#contatos" tabindex="-1" aria-disabled="true"
 				  >Contatos</a
 				>
 			  </div>
@@ -81,7 +195,7 @@ font-size: 2rem; /* change this to change the size*/
 			<h1 class="mb-0" style="letter-spacing: 1.6vw; padding-bottom: 0; color:white; opacity:0.9; font-size:7vw; font-family: 'Krona One', sans-serif;">RHAMUS</h1>
 			<h1 class="mb-3 mt-0" style="letter-spacing: 0.6rem; color:white; font-size:2vw; font-family: 'Krona One', sans-serif;">HAIR</h1>
 			
-			<a class="btn btn-light" href="" style="font-size:1rem" role="button">Ligar&nbsp;&nbsp;&nbsp;<i class="fas fa-phone"></i></a>
+			<a class="btn btn-light" href="tel:351933428190" style="font-size:1rem" role="button">Ligar&nbsp;&nbsp;&nbsp;<i class="fas fa-phone"></i></a>
 		</div>
 		<!-- Jumbotron -->
 		  
@@ -94,7 +208,7 @@ font-size: 2rem; /* change this to change the size*/
 							src="img/ana1.jpg"
 							class="figure-img img-fluid rounded shadow-3 mb-3"
 							alt="..."/>
-						  <figcaption class="figure-caption">Últimas tendência</figcaption>
+						  <figcaption class="figure-caption">Últimas tendências</figcaption>
 					</figure>
 				</div>
 				<div class="col-md">
@@ -118,26 +232,26 @@ font-size: 2rem; /* change this to change the size*/
 			</div>
 		</div>
 		
-		<div class="container py-3">
+		<div class="container py-3" id="servicos">
 		<!-- Content here -->
 			<div class="row">
 				<div class="col-md mb-3 px-6">
 					<h1> Dedicação
 					</h1>
-				  <p class="lead">
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae nihil hic
-					delectus excepturi ipsam reprehenderit iusto rem, quam, repellendus accusantium culpa
-					reiciendis sit dolorum aut aperiam a architecto. Fuga, sit.
-				  </p>
-				</div>
-				<div class="col-md mb-3 px-6">
-				  <h1> Corpo e Alma
+					<p class="lead">
+					Acreditamos que atuar em prol da sustentabilidade e da justiça 
+					social é importante para a indústria da beleza. Da reciclagem 
+					ao atendimento que respeita cada pessoa como ser único.
+					</p>
+					</div>
+				<div class="col-md mb-3 px-6">				  
+					<h1> Corpo e Alma
 					</h1>
-				  <p class="lead">
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae nihil hic
-					delectus excepturi ipsam reprehenderit iusto rem, quam, repellendus accusantium culpa
-					reiciendis sit dolorum aut aperiam a architecto. Fuga, sit.
-				  </p>
+					<p class="lead">
+					Adotamos uma abordagem holística para a sua saúde e beleza.
+					A nossa equipe trabalha com os clientes de forma muito 
+					pessoal para concretizar as suas ideias.	
+					</p>
 				</div>  
 			</div>
 		</div>	
@@ -145,7 +259,7 @@ font-size: 2rem; /* change this to change the size*/
 		<!-- Footer -->
 <footer class="bg-light text-center text-lg-left">
   <!-- Grid container -->
-		<div class="container p-4">
+		<div class="container p-4" id="contatos">
 			<!--Grid row-->
 			<div class="row">
 				  <!--Grid column-->
@@ -171,11 +285,11 @@ font-size: 2rem; /* change this to change the size*/
 					</p>
 					<p>
 					  <i class="fab fa-whatsapp" style="color:#4AC959;"></i>
-					  &nbsp;&nbsp;am-reprehenore
+					  &nbsp;&nbsp;+351 933 428 190
 					</p>
 					<p>
 					  <i class="far fa-envelope" style="color:#DB4437;"></i>
-					  &nbsp;&nbsp;amhenderit@iusto.com
+					  &nbsp;&nbsp;rhamushair@gmail.com
 					</p>					
 					
 					
