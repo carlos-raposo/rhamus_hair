@@ -28,7 +28,7 @@
 		.lead {
 			font-size: 1rem;
 			}
-		#servicos h1 {letter-spacing: 0.6rem;			
+		#servicos h1 {letter-spacing: 0.5rem;			
 				font-family: 'Krona One', sans-serif;}
 		#servicos h2 {color:#3333339e;
 				padding-bottom: 0.8rem;
@@ -197,7 +197,7 @@ and (min-width : 1824px){
 	
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		  <div class="container-fluid">
-			<a class="navbar-brand" href="tel:351933428190" style="letter-spacing: 0.2rem; font-size:1.3rem;">Marque já&nbsp;&nbsp;&nbsp; <i class="fas fa-phone fa-lg"></i></a>
+			<a class="navbar-brand" href="tel:351933428190" style="letter-spacing: 0.2rem; font-size:1.3rem;">MARQUE JÁ&nbsp;&nbsp;&nbsp; <i class="fas fa-phone fa-lg"></i></a>
 			<button
 			  class="navbar-toggler"
 			  type="button"
@@ -212,9 +212,14 @@ and (min-width : 1824px){
 			  <div class="navbar-nav ml-auto">
 				<a class="nav-link active" aria-current="page" href="#">Início</a>
 				<a class="nav-link" href="#servicos">Serviços</a>
-				<a class="nav-link" href="#contatos" tabindex="-1" aria-disabled="true"
-				  >Contatos</a
-				>
+				<a class="nav-link" href="#contatos" tabindex="-1" aria-disabled="true">Contatos</a>
+				<div class="dropdown pmd-dropdown">
+					<a class="dropdown-toggle nav-link" type="" id="" data-toggle="dropdown" aria-expanded="true">PT</a>
+					<div class="dropdown-menu " style="background-color: #fbfbfb; min-width:0">
+						<a class="dropdown-item" style="font-size: 1rem; text-align:left; padding-left:0.5rem" href="index.en.html">EN</a>						
+					</div>
+				</div>   
+			  
 			  </div>
 			</div>
 		  </div>
@@ -235,28 +240,37 @@ and (min-width : 1824px){
 			<div class="row gx-5">
 				<div class="col-md">
 					<figure class="figure p-3">
+						<picture>
+							<source srcset="img/veronica.jpg">
 						  <img
-							src="img/joana.jpg"
+							src="img/joana.sm.jpg"
 							class="figure-img img-fluid rounded shadow-3 mb-3"
-							alt="..."/>
+							alt="mostra parte de trás de cabeça de mulher com cabelo liso e longo"/>
+						</picture>  
 						  <figcaption class="figure-caption">Corte Feminino</figcaption>
 					</figure>
 				</div>
 				<div class="col-md">
 					<figure class="figure p-3">
+						<picture>
+							<source srcset="img/malvina.webp">
 						  <img
-							src="img/malvina.jpg"
+							src="img/malvina.sm.jpg"
 							class="figure-img img-fluid rounded shadow-3 mb-3"
-							alt="..."/>
+							alt="mulher com cabelo longo"/>
+						</picture>	
 						  <figcaption class="figure-caption">Cor</figcaption>
 					</figure>
 				</div>
 				<div class="col-md">
 					<figure class="figure p-3">
+						<picture>
+							<source srcset="img/miguel.webp">
 						  <img
-							src="img/miguel.jpg"
+							src="img/miguel.sm.jpg"
 							class="figure-img img-fluid rounded shadow-3 mb-3"
-							alt="..."/>
+							alt="homem de cabelo curto em fade do meio da cabeça "/>
+						</picture>  
 						  <figcaption class="figure-caption">Corte Masculino</figcaption>
 					</figure>
 				</div>
@@ -285,7 +299,61 @@ and (min-width : 1824px){
 					</p>
 				</div>  
 			</div>
-		</div>	
+		</div>
+
+		<div class="container px-4">
+		  <!-- Content here -->
+			<div class="row gx-5">
+				<div class="col-md-12">
+					<h1> Os nossos produtos
+					</h1>
+				</div>
+				<div class="col-md">
+					<figure class="figure p-3">
+						<picture>
+							<source srcset="img/momo.jpg">
+						  <img
+							src="img/momo.jpg"
+							class="figure-img img-fluid rounded shadow-3 mb-3"
+							alt="mostra parte de trás de cabeça de mulher com cabelo liso e longo"/>
+						</picture>  
+						  <figcaption class="produtos"><b>MOMO</b>: Gama especial para cabelos secos ou desidratados. Rico em água, vitaminas e sais minerais, fornece uma prolongada hidratação. Com extrato de Melão Amarelo Cartucciaru de Paceco.</figcaption>
+					</figure>
+				</div>
+				<div class="col-md">
+					<figure class="figure p-3">
+						<picture>
+							<source srcset="img/oi.jpg">
+						  <img
+							src="img/oi.jpg"
+							class="figure-img img-fluid rounded shadow-3 mb-3"
+							alt="mulher com cabelo longo"/>
+						</picture>	
+						  <figcaption class=" produtos">
+							<b>OI</b>: Gama indicada para fornecer ao cabelo suavidade, brilho e corpo extraordinários
+							Rico em betacaroteno.
+							Ação restruturante que favorece o crescimento.			
+							Rico em oligoelementos
+							e ácido elágico.
+							Com óleo de Roucou.</figcaption>
+					</figure>
+				</div>
+				<div class="col-md">
+					<figure class="figure p-3">
+						<picture>
+							<source srcset="img/nounou.jpg">
+						  <img
+							src="img/nounou.jpg"
+							class="figure-img img-fluid rounded shadow-3 mb-3"
+							alt=""/>
+						</picture>  
+						  <figcaption class="produtos"><b>NOUNOU</b>: Gama para reparação intensa e nutrição profunda. 
+						  Para cabelo seco ou danificado por tratamentos como madeixas ou descolorações, permanentes ou alisamentos. 
+						  Com extrato de Tomate Fiaschetto.</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
 		
 		<div class="container py-3" id="servicos">
 		<!-- Content here -->
@@ -329,7 +397,7 @@ and (min-width : 1824px){
 					<h2> Outros
 					</h2>
 					<h3 style="font-weight:400">Wash & Dry</h3>
-					<h3 style="font-weight:400">Moisturazing</h3>
+					<h3 style="font-weight:400">Hidratação</h3>
 					<h3 style="font-weight:400">Alisamento</h3>
 					
 					
